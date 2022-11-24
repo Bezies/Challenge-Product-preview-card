@@ -1,0 +1,141 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #f3eae3;
+}
+
+
+@font-face {
+	font-family: Montserrat;
+	src: url(font/Montserrat/static/Montserrat-Bold.ttf);
+	src: url(font/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+	font-family: Fraunces;
+	src: url(font/Fraunces/static/Fraunces_9pt/Fraunces_9pt-Bold.ttf);
+}
+
+.box {
+	display: flex;
+	width: 600px;
+	background-color: white;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+	background-image: url(images/image-product-desktop.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+
+}
+
+img {
+	width: 300px;
+}
+
+.description {
+	padding: 20px 30px;
+	width: 50%;
+	margin-left: 300px;
+}
+
+.description h2 {
+	color: #192026;
+	font-family: Fraunces;
+	font-size: 2em;
+}
+
+.description h1 {
+	color: #7f7f87;
+	font-family: Montserrat;
+	font-size: 0.8em;
+	letter-spacing: 5px;
+}
+
+.p1 {
+	font-size: 14px;
+	color: #7f7f87;
+	font-family: Montserrat;
+}
+
+.price {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.price1 {
+	color: #418169;
+	font-size: 2em;
+	font-family: Fraunces;
+}
+
+.pricepromo {
+	color: #7f7f87;
+	text-decoration: line-through;
+	font-size: 0.8em;
+	font-family: Montserrat;
+}
+
+button {
+	text-align: center;
+	background-color: #1a4031;
+	color: white;
+	width: 220px;
+	padding: 15px 0px;
+	border: none;
+
+	margin-left: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+ .attribution { 
+ 	font-size: 11px; 
+ 	position: absolute; 
+ 	bottom: 0;
+
+ }
+   .attribution a { 
+    	color: hsl(228, 45%, 44%); 
+    }
+
+@media all and (max-width: 400px) {
+	.box {
+		flex-direction: column;
+		background-image: url(images/image-product-mobile.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 90%;
+		height: 100vh;
+	}
+
+	.description {
+		margin-left: 0;
+		margin-top: 220px;
+		width: 80%;
+	}
+
+
+
+	 .attribution { 
+ 	font-size: 11px; 
+ 	position: absolute; 
+ 	bottom: 0;
+ 	right: 0;
+ 	writing-mode: vertical-rl;
+ 	rotate: 180deg;
+ 	}
+
+ 	button {
+ 		width: 300px;
+ 		margin-left: 0;
+ 	}
+}
+
+
+
+
